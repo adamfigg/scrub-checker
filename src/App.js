@@ -1,8 +1,9 @@
-import Reset from './Reset.css';
+import './Reset.css';
 import React, { Component } from 'react';
 import OWlogo from './OWlogo.svg';
 import './App.css';
-import EnterName from './Components/EnterName'
+import SelectClass from './Components/SelectClass';
+import ListCharacter from './Components/ListCharacter';
 
 class App extends Component {
   render() {
@@ -10,12 +11,13 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={OWlogo} className="Logo" alt="OWlogo" />
-          <h2>Are you a scrub?</h2>
-          <h3>Enter your username and platform of choice</h3>
+          
+          <h1>Calling all agents of Overwatch</h1>
+          <h2>Which role does your team need?</h2>
          
         </div>
-        <EnterName />
-
+        <SelectClass />
+        <ListCharacter />
       </div>
     );
   }
