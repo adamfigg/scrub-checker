@@ -4,7 +4,8 @@ import OWlogo from './OWlogo.svg';
 import './App.css';
 import SelectClass from './Components/SelectClass';
 import ListCharacter from './Components/ListCharacter';
-// import ListClass from './Components/ListClass';
+import LetsGo from './Components/LetsGo';
+import Reroll from './Components/Reroll';
 
 class App extends Component {
   constructor(){
@@ -50,13 +51,13 @@ class App extends Component {
          
         </div>
         <SelectClass handleCheckbox={this.handleCheckbox}/>
-
-              {/*I NEED TO ADD IN A ON CLICK BUTTON TO SPIT OUT A CHARACTER FROM THE SELECETED CLASSES*/}
-
-               
-        <ListCharacter 
-          hero={this.state.hero.name}
-        />
+        <div>
+        <LetsGo className='Button'/>
+        </div>  
+        <ListCharacter />    
+         {/*This was here before and I dont know if I will need this later .... :)  hero={this.state.hero.name}*/}
+         
+        <Reroll />
         
       </div>
     );

@@ -12,13 +12,13 @@ class SelectClass extends Component {
                         <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Attack
                     </label>
                     <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' /> Defense
+                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Defense
                     </label>
                     <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' /> Tank
+                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Tank
                     </label>
                     <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' /> Support
+                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Support
                     </label>
                 </div>
             </div>
