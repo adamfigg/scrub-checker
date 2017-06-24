@@ -1,35 +1,33 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 
+// class SelectClass extends Component {
 
+// 	checkedClasses = {
+// 		"offense": false,
+// 		"defense": false,
+// 		"tank": false,
+// 		"support": false
+// 	};
 
-class SelectClass extends Component {
-    // this.props.handleCheckbox()
-    render() {
-        return (
-            <div>
-                <div className='btn-group' data-toggle='buttons'>
-                    <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Attack
-                    </label>
-                    <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Defense
-                    </label>
-                    <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Tank
-                    </label>
-                    <label className='btn btn-primary'>
-                        <input type='checkbox' autoComplete='off' onChange={this.props.handleCheckbox}/> Support
-                    </label>
-                </div>
-            </div>
-        );
-    }
-}
+// 	sendClassArray() {
+// 		return this.checkedClasses;
+// 	}
 
-export default SelectClass
+// 	toggleClass(className) {
+// 		this.checkedClasses[className] = (this.checkedClasses[className]) ? false : true;
+// 	}
 
-
-
-
-
-           
+// 	render() {
+// 		return (
+// 			<div>
+// 				<button className="btn btn-primary" onClick={() => {this.toggleClass('offense')}} >Offense</button>
+// 				<button className="btn btn-primary" onClick={() => {this.toggleClass('defense')}} >Defense</button>
+// 				<button className="btn btn-primary" onClick={() => {this.toggleClass('tank')}} >Tank</button>
+// 				<button className="btn btn-primary" onClick={() => {this.toggleClass('support')}} >Support</button>
+// 				<br />
+// 				<button className='btn btn-primary' type="button">Lets Go</button>
+// 			</div>
+// 		);
+// 	}
+// }
+// export default SelectClass

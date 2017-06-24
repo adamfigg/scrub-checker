@@ -1,86 +1,166 @@
 h1, h2, h3, h4, p {
-  font-family: overwatch;
+  font-family: overwatch !important;
   font-weight: 100;
 }
 
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #222;
-  height: 180px;
+  background-color: #060606;
+  height: 100vh;
   padding: 20px;
   color: white;
 }
+/*
+.btn-overwatchclass {
+  background-color: #030303;
+  font-family: overwatch;
+  font-size: 3rem;
+  color: white;
+  border: 2px solid #FAA02E;
+  transition-duration: .25s; 
+  transform: skewX(-5deg);
+  
+}
+.btn-overwatchclass:hover{
+  background-color: #2F2526;
+   border: 2px solid #FAA02E;
+}
+.btn-overwatchclass.active{
+  background-color: yellow !important;
+   border: 2px solid #Ffffff;
+}
 
-.App-intro {
-  font-size: large;
+.btn-overwatch {
+  background-color: #030303;
+  font-family: overwatch;
+  font-size: 3rem;
+  color: white;
+  border: 2px solid #FAA02E;
+  transition-duration: .25s; 
+  transform: skewX(-5deg);
+  
+}
+.btn-overwatch:hover{
+  background-color: #2F2526;
+   border: 2px solid #FAA02E;
+   transform: skewX(-5deg);
+}
+.btn-overwatch.active{
+  background-color: #FAA02E;
+   border: 2px solid #Ffffff;
+   transform: skewX(-5deg);
+    
+   
+  
+}
+*/
+
+.btn-overwatch,
+.btn-overwatch:focus {
+	background-color: transparent;
+	font-family: overwatch;
+	font-size: 3rem;
+	color: white;
+	border: 2px solid #00C3FF;
+	transition-duration: .25s;
+	transform: skewX(-5deg);
+	outline: none !important;
+}
+
+	.btn-overwatch:hover {
+		background-color: #fff;
+		border: 2px solid #fff;
+		color: #222;
+		outline: none !important;
+	}
+
+	.btn-overwatch:active,
+	.btn-overwatch:active:focus,
+	.btn-overwatch:active:hover {
+		background-color: #fff;
+		border: 2px solid #fff;
+		color: #222;
+		outline: none !important;
+	}
+
+	.btn-overwatch.active,
+	.btn-overwatch.active:focus {
+		background-color: #00C3FF;
+		border: 2px solid #00C3FF;
+		color: #222;
+		outline: none !important;
+	}
+
+		.btn-overwatch.active:hover {
+			background-color: #fff;
+			border: 2px solid #fff;
+			color: #222;
+			outline: none !important;
+		}
+
+		.btn-overwatch.active:active,
+		.btn-overwatch.active:active:focus,
+		.btn-overwatch.active:active:hover {
+			background-color: #00C3FF;
+			border: 2px solid #00C3FF;
+			color: #222;
+			outline: none !important;
+		}
+
+
+/*THESE ARE THE CLASSES FOR THE GIVEME A HERO BUTTON*/
+
+.btn-overwatch-hero,
+.btn-overwatch-hero:focus {
+	background-color: transparent;
+	font-family: overwatch;
+	font-size: 3rem;
+	color: white;
+	border: 2px solid #FAA02E;
+	transition-duration: .25s;
+	transform: skewX(-5deg);
+	outline: none !important;
+}
+
+	.btn-overwatch-hero:hover {
+		background-color: #FAA02E;
+		border: 2px solid #FAA02E;
+		color: #222;
+		outline: none !important;
+	}
+
+	.btn-overwatch-hero:active,
+	.btn-overwatch-hero:active:focus,
+	.btn-overwatch-hero:active:hover {
+		background-color: #bb741a;
+		border: 2px solid #bb741a;
+		color: #222;
+		outline: none !important;
+	}
+
+@font-face {
+  font-family: overwatch;
+  src: url(fonts/big_noodle_titling_oblique.ttf)
 }
 
 .Logo {
   height: 80px;
-  animation: App-logo-spin infinite 10s linear;
+	transition-duration: .25s;
+}
+
+.loading {
+  animation: App-logo-spin infinite .55s linear;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-@font-face {
-  font-family: overwatch;
-  src: url(fonts/big_noodle_titling_oblique.ttf)
+
+
+footer {
+  position: fixed;
+  bottom: 15%;
+  left: 0;
+  background: transparent;
+  width: 100%;
 }
-.SelectClass {
-  background-color: #222;
-  font-family: overwatch;
-  font-size: 3rem;
-  color: white;
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
-$bg: rgba(0,18,24,0.8);
-$font-face: 'Roboto', sans-serif;
-body {
-  background: $bg;
-  padding: 50px;
-}
-.chicken {
-  font-family: $font-face;
-  font-weight: 600;
-  font-size: 1em;
-  color: white;
-  border: 1px solid transparent;
-  border-radius: .5em;
-  padding: .3em .9em .3em .3em;
-  text-decoration: none;
-  margin: 0;
-  display: table;
-  line-height: 1.25em;
-  span, div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  span {
-    border: 1px solid white;
-    border-radius: .3em;
-    background: rgba(0,0,0,0.3);
-    padding: .3em .9em;
-    font-size: .75em;
-  }
-  div {
-    padding-left: .6em;
-  }
-  &:hover {
-    border-color: rgba(255,255,255,0.5);
-    span {
-      background: rgba(255,255,255,0.5);
-      color: $bg;
-      border-color: transparent;
-    }
-  }
-}
-
-
-
-
