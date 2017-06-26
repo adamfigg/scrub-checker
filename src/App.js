@@ -24,13 +24,6 @@ class App extends Component {
       // a random hero that we'll store in 'hero'
       randHeroID: null,
       hero: {},
-      // logocss: {
-      //   height: '80px',
-      //   animation: 'App-logo-spin infinite 10s linear', 
-      //   backgroundColor: 'blue',
-
-      // },
-
       // This keeps track of the active buttons
       checkedClasses: {
         "offense": false,
@@ -44,10 +37,8 @@ class App extends Component {
       defActive: "",
       tanActive: "",
       supActive: "",
-
       isLoading: ''
     }
-
     // These allow us to use the 'this' keyword in our functions
     this.toggleClass = this.toggleClass.bind(this);
     this.search = this.search.bind(this);
@@ -65,13 +56,10 @@ class App extends Component {
 
   // This will toggle the CSS class 'active' when a button is pressed
   toggleClass(event) {
-
     //store this.state.checkedClasses in a variable for easy reference
     var cc = this.state.checkedClasses;
-
     // this will toggle the active setting in the state
     cc[event.target.value] = (cc[event.target.value]) ? false : true;
-
     // this toggles the active class on the button
     switch (event.target.value) {
       case 'offense':
@@ -125,20 +113,7 @@ class App extends Component {
     });
   }
 
-  startSpinner() {
-    // setTimeout(function() {
-    //   console.log('clicked')
-    //   this.setState({
-    //     logocss: {
-    //       height: '60px',
-    //       animation: 'App-logo-spin infinite 10s linear'
-    //     }
-    //   })
-    // }, 3000)  Animated.decay() !!!!!
-    // this.setState({
-    //   logocss: {
-    //     backgroundColor: 'red',
-    //     height: '80px',  
+  startSpinner() {  
   }
 
   isLoading() {
@@ -219,8 +194,6 @@ class App extends Component {
         <h1>Calling all agents of Overwatch</h1>
         <h2>Which role does your team need?</h2>
 
-        {/* This is our button. We give it styles, and then we give it the 'active' class if it's active.
-					When we click, it will invoke the toggleClass() function defined above. */}
         <button className={"btn btn-primary btn-overwatch" + this.state.offActive} onClick={this.toggleClass} value="offense">offense</button>
         <button className={"btn btn-primary btn-overwatch" + this.state.defActive} onClick={this.toggleClass} value="defense">defense</button>
         <button className={"btn btn-primary btn-overwatch" + this.state.tanActive} onClick={this.toggleClass} value="tank">tank</button>
@@ -231,7 +204,7 @@ class App extends Component {
 
 
         {/* Here we are saving our entire hero object that we got from the API in a props variable called 'hero'.
-					We'll take this variable and display specific properties from it in ListCharacter.js, so go ahead and open that now. */}
+					We'll take this variable and display specific properties from it in ListCharacter.js */}
         <ListCharacter hero={this.state.hero} />
 
         <footer>

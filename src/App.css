@@ -10,50 +10,6 @@ h1, h2, h3, h4, p {
   padding: 20px;
   color: white;
 }
-/*
-.btn-overwatchclass {
-  background-color: #030303;
-  font-family: overwatch;
-  font-size: 3rem;
-  color: white;
-  border: 2px solid #FAA02E;
-  transition-duration: .25s; 
-  transform: skewX(-5deg);
-  
-}
-.btn-overwatchclass:hover{
-  background-color: #2F2526;
-   border: 2px solid #FAA02E;
-}
-.btn-overwatchclass.active{
-  background-color: yellow !important;
-   border: 2px solid #Ffffff;
-}
-
-.btn-overwatch {
-  background-color: #030303;
-  font-family: overwatch;
-  font-size: 3rem;
-  color: white;
-  border: 2px solid #FAA02E;
-  transition-duration: .25s; 
-  transform: skewX(-5deg);
-  
-}
-.btn-overwatch:hover{
-  background-color: #2F2526;
-   border: 2px solid #FAA02E;
-   transform: skewX(-5deg);
-}
-.btn-overwatch.active{
-  background-color: #FAA02E;
-   border: 2px solid #Ffffff;
-   transform: skewX(-5deg);
-    
-   
-  
-}
-*/
 
 .btn-overwatch,
 .btn-overwatch:focus {
